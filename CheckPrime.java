@@ -3,8 +3,14 @@ import java.util.Scanner;
 public class CheckPrime {
 
 	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
 
-		int primeNum = primeFunction();
+		System.out.println("Enter Any no to check its prime :-");
+
+		int inputNum = input.nextInt();
+		
+		
+		int primeNum = primeFunction(inputNum);
 
 		if (primeNum == 0) {
 
@@ -16,13 +22,7 @@ public class CheckPrime {
 
 	}
 
-	public static int primeFunction() {
-
-		Scanner input = new Scanner(System.in);
-
-		System.out.println("Enter Any no to check its prime :-");
-
-		int inputNum = input.nextInt();
+	public static int primeFunction(int inputNum) {
 
 		int temp = 0;
 
